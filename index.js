@@ -1,23 +1,22 @@
 function saturdayFun(activity = "roller-skate") {
-    return "This Saturday, I want to roller-skate!";
-    }
-    console.log(saturdayFun()); //"This Saturday, I want to bathe my dog!"
-console.log(saturdayFun("bathe my dog")); //"This saturday, I want to bathe my dog!"
-
-const mondayWork = function work(activity="go to the office") {
-    return "This Monday, I will go to the office.";
-    const mondayWork = ("work from home"); //"This monday, I will work from home."
-    }
-    
-    
-function wrapAdjective(flair = "*") {
-    return function(adjective = "special") {
-        return "You are ${flair}${adjective}${flair}!"; 
-    }
-    
+    return "This Saturday, I want to roller-skate!"
+}
+function saturdayFun(activity = "bathe my dog") {
+    return "This Saturday, I want to bathe my dog!"
+}
+function mondayWork(activity = "go to the office") {
+    return "This Monday, I will go to the office."
+}
+function mondayWork(activity = "work from home") {
+     return "This Monday, I will work from home."
 }
 
-const christine = wrapAdjective ()
+    
+let wrapAdjective = function(flair="*") {
+    return function(word="special") {
+      return `You are ${flair}${word}${flair}!`
+    }
+}
     
 
 
